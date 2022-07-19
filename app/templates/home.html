@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font Awesome -->
+	<link
+	  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+	  rel="stylesheet"
+	/>
+	<!-- Google Fonts -->
+	<link
+	  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+	  rel="stylesheet"
+	/>
+	<!-- MDB -->
+	<link
+	  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+	  rel="stylesheet"
+	/>
+	<!-- MDB -->
+	<script
+	  type="text/javascript"
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+	></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../static/data_script.js"></script>
+	<title>Weather Monitoring System</title>
+</head>
+<style>
+	.header {
+		padding: 40px;
+		background-color: #9bdf46;
+	}
+	h1 {
+		text-align: center;
+		color: white;
+		letter-spacing: 10px;
+		font-weight: lighter;
+		/*transform: scale(0.7, 1.0);
+		font-size: 60px;*/
+	}
+	.header div {
+		text-align: center;
+		color: white;
+		font-style: italic;
+	}
+	.data_panel div {
+		border: solid 1px black;
+		text-align: center;
+		border-radius: 10px;
+	}
+	span {
+		font-size: 20px;
+	}
+	.values {
+		display: block;
+		font-size: 70px;
+	}
+</style>
+<body>
+	<div class="header">
+		<h1>SMART WEATHER MONITORING</h1>
+		<div>An IoT based solution!</div>
+	</div>
+	<div class="row data_panel mt-4 justify-content-evenly">
+		<div class="col-3" id="current_temp">
+			<span>Current Temperature <i class="fa-solid fa-temperature-full"></i></span>
+			<span class="values" id="current_real_temp">99 &deg;C</span>
+		</div>
+		<div class="col-3" id="temperature_data">
+			<span>Room Temperature <i class="fa-solid fa-temperature-full"></i></span>
+			<span class="values" id="current_bolt_temp">00 &deg;C</span>
+		</div>
+		<div class="col-3" id="rain_data">
+			<span>Rain Status <i class="fa-solid fa-cloud-showers-heavy"></i></span>
+			<span class="values" id="current_rain_status">Raining</span>
+		</div>
+	</div>
+</body>
+</html>
